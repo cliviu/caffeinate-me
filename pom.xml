@@ -11,12 +11,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>3.4.2-SNAPSHOT</serenity.version>
+        <serenity.version>3.4.4-SNAPSHOT</serenity.version>
         <encoding>UTF-8</encoding>
         <tags></tags>
-<!--        <parallel.tests>4</parallel.tests>
-        <parallel>methods</parallel>
-        <useUnlimitedThreads>true</useUnlimitedThreads>-->
         <webdriver.base.url></webdriver.base.url>
     </properties>
 
@@ -104,9 +101,6 @@
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
                     </systemPropertyVariables>
-                    <parallel>classes</parallel>
-                    <threadCount>${parallel.tests}</threadCount>
-                    <forkCount>${parallel.tests}</forkCount>
                 </configuration>
                 <executions>
                     <execution>
